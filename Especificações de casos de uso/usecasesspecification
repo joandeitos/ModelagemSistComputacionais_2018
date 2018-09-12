@@ -1,1 +1,67 @@
 #Especificação dos Casos de Uso
+
+// ESPECIFICAÇÃO EMPRESTAR
+1. Escopo
+
+1.1 NOME E DESCRIÇÃO DE CASO DE USO
+
+Emprestar: Vincula o empréstimo de um recurso do laboratório para uma pessoa a partir de um determinado tempo.
+
+1.2 DIAGRAMA PARCIAL
+
+1.3 ATOR PRIMÁRIO
+
+Pessoa (Aluno / Professor)
+
+1.4 ATORES SECUNDÁRIOS
+
+Administrador do Sistema, Timer.
+
+1.5 PRÉ-CONDIÇÕES
+
+Para uma pessoa emprestar um recurso, deve estar registrada no sistema, bem como o recurso. Deve existir disponibilidade de recurso para empréstimo.
+Caso o recurso esteja classificado como especial, deve existir uma prévia autorização de um professor para com o aluno e recurso.
+
+// ESPECIFICAÇÃO DEVOLVER
+1. ESCOPO
+
+1.1 NOME E DESCRIÇÃO DO CASO DE USO
+
+Devolver: Vincula a devolução do recurso em posse do aluno ao laboratório após um determinado tempo.
+
+1.2 DIAGRAMA PARCIAL
+
+1.3 ATOR PRIMÁRIO
+
+Pessoa (Aluno / Professor)
+
+1.4 ATORES SECUNDÁRIOS
+
+Administrador do Sistema, Timer.
+
+1.5 PRÉ-CONDIÇÕES
+
+Para uma pessoa devolver um recurso deve estar registrado um empréstimo deste em posse daquele.
+
+// ESPECIFICAÇÃO REGISTRAR
+
+1. ESCOPO
+
+1.1 NOME E DESCRIÇÃO DO CASO DE USO
+
+Registrar: Compila histórico de empréstimos e/ou devoluções realizadas por Pessoas no Suporte do Laboratório.
+
+1.2 DIAGRAMA PARCIAL
+
+1.3 ATOR PRIMÁRIO
+
+Administrador do Sistema
+
+1.4 Atores Secundários
+
+// NULL
+
+1.5 PRE-CONDIÇÕES
+
+Existir um processo válido de empréstimo ou devolução com recurso disponível e hierarquia de permissão verificada.
+
